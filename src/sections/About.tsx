@@ -63,7 +63,7 @@ export function About() {
               <div className="space-y-4">
                 <div className="relative rounded-2xl overflow-hidden shadow-elegant aspect-[4/5]">
                   <img
-                    src="/images/dish-gourmet.jpg"
+                    src={`${import.meta.env.BASE_URL}images/dish-gourmet.jpg`}
                     alt="Prato Gourmet"
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                   />
@@ -71,7 +71,7 @@ export function About() {
                 </div>
                 <div className="relative rounded-2xl overflow-hidden shadow-gold aspect-square">
                   <img
-                    src="/images/personal-chef.jpg"
+                    src={`${import.meta.env.BASE_URL}images/personal-chef.jpg`}
                     alt="Chef em ação"
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                   />
@@ -81,7 +81,7 @@ export function About() {
               <div className="space-y-4 pt-8">
                 <div className="relative rounded-2xl overflow-hidden shadow-gold aspect-square">
                   <img
-                    src="/images/banquete.jpg"
+                    src={`${import.meta.env.BASE_URL}images/banquete.jpg`}
                     alt="Banquete"
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                   />
@@ -89,7 +89,7 @@ export function About() {
                 </div>
                 <div className="relative rounded-2xl overflow-hidden shadow-elegant aspect-[4/5]">
                   <img
-                    src="/images/marmitas-fit.jpg"
+                    src={`${import.meta.env.BASE_URL}images/marmitas-fit.jpg`}
                     alt="Marmitas Fit"
                     className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
                   />

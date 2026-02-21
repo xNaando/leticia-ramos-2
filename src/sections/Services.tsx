@@ -32,6 +32,7 @@ export function Services() {
   }, []);
 
   const whatsappLink = `https://wa.me/5531998841213?text=Olá%20Letícia!%20Gostaria%20de%20solicitar%20um%20orçamento.`;
+  const baseUrl = import.meta.env.BASE_URL;
 
   const services = [
     {
@@ -39,7 +40,7 @@ export function Services() {
       title: 'Personal Chef',
       description:
         'Experiência gastronômica exclusiva na sua casa. Ideal para jantares românticos, encontros com amigos ou celebrações em família.',
-      image: '/images/personal-chef.jpg',
+      image: `${baseUrl}images/personal-chef.jpg`,
       features: [
         'Menu personalizado',
         'Compras dos ingredientes',
@@ -52,7 +53,7 @@ export function Services() {
       title: 'Banquetes & Eventos',
       description:
         'Celebrações inesquecíveis com cardápios sofisticados. Casamentos, aniversários, eventos corporativos e muito mais.',
-      image: '/images/banquete.jpg',
+      image: `${baseUrl}images/banquete.jpg`,
       features: [
         'Eventos de qualquer porte',
         'Equipe completa',
@@ -65,7 +66,7 @@ export function Services() {
       title: 'Marmitas Fit',
       description:
         'Alimentação saudável e saborosa para o seu dia a dia. Refeições balanceadas, preparadas com ingredientes frescos.',
-      image: '/images/marmitas-fit.jpg',
+      image: `${baseUrl}images/marmitas-fit.jpg`,
       features: [
         'Cardápio variado',
         'Porções balanceadas',
@@ -78,7 +79,7 @@ export function Services() {
       title: 'Cardápios para Restaurantes',
       description:
         'Consultoria especializada para criar ou renovar o cardápio do seu restaurante. Inovação que valoriza sua cozinha.',
-      image: '/images/cardapio.jpg',
+      image: `${baseUrl}images/cardapio.jpg`,
       features: [
         'Análise do conceito',
         'Criação de pratos',
@@ -91,7 +92,7 @@ export function Services() {
       title: 'Aulas de Culinária',
       description:
         'Aprenda técnicas profissionais em aulas personalizadas. Para iniciantes ou quem quer aprimorar suas habilidades.',
-      image: '/images/dish-gourmet.jpg',
+      image: `${baseUrl}images/dish-gourmet.jpg`,
       features: [
         'Aulas individuais ou em grupo',
         'Técnicas profissionais',
@@ -104,7 +105,7 @@ export function Services() {
       title: 'Coffee Break & Brunch',
       description:
         'Pausas corporativas e encontros descontraídos com opções deliciosas e apresentação impecável.',
-      image: '/images/dish-gourmet.jpg',
+      image: `${baseUrl}images/dish-gourmet.jpg`,
       features: [
         'Opções doces e salgadas',
         'Bebidas variadas',

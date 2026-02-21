@@ -135,7 +135,7 @@ export function Hero() {
               {/* Main Image Container */}
               <div className="relative w-72 h-72 sm:w-96 sm:h-96 lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden shadow-elegant border-4 border-gold/50">
                 <img
-                  src="/images/chef-leticia.png"
+                  src={`${import.meta.env.BASE_URL}images/chef-leticia.png`}
                   alt="Letícia Ramos - Chef de Cozinha"
                   className="w-full h-full object-cover object-top"
                 />

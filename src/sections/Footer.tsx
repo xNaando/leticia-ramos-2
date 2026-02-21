@@ -104,7 +104,7 @@ export function Footer() {
           {/* Logo Image */}
           <div className="flex flex-col items-center lg:items-end">
             <img
-              src="/images/logo.png"
+              src={`${import.meta.env.BASE_URL}images/logo.png`}
               alt="Letícia Ramos Logo"
               className="w-64 h-64 object-contain"
             />
