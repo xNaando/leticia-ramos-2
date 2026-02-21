@@ -92,7 +92,7 @@ export function Services() {
       title: 'Aulas de Culinária',
       description:
         'Aprenda técnicas profissionais em aulas personalizadas. Para iniciantes ou quem quer aprimorar suas habilidades.',
-      image: `${baseUrl}images/dish-gourmet.jpg`,
+      image: `${baseUrl}images/image.jpg`,
       features: [
         'Aulas individuais ou em grupo',
         'Técnicas profissionais',
