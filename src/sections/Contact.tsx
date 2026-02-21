@@ -63,8 +63,8 @@ export function Contact() {
   ];
 
   const socialLinks = [
-    { icon: Instagram, label: 'Instagram', link: '#' },
-    { icon: Facebook, label: 'Facebook', link: '#' },
+    { icon: Instagram, label: 'Instagram', link: 'https://www.instagram.com/letiiciaramoss/' },
+    { icon: Facebook, label: 'Facebook', link: 'https://www.facebook.com/leticiagattaa' },
   ];
 
   return (
@@ -173,6 +173,8 @@ export function Contact() {
                       <a
                         key={index}
                         href={social.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="w-12 h-12 bg-burgundy/10 rounded-full flex items-center justify-center hover:bg-burgundy transition-colors group"
                         aria-label={social.label}
                       >
