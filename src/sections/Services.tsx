@@ -53,7 +53,7 @@ export function Services() {
       title: 'Banquetes & Eventos',
       description:
         'Celebrações inesquecíveis com cardápios sofisticados. Casamentos, aniversários, eventos corporativos e muito mais.',
-      image: `${baseUrl}images/banquete.jpg`,
+      image: `${baseUrl}images/banquete2.jpg`,
       features: [
         'Eventos de qualquer porte',
         'Equipe completa',
