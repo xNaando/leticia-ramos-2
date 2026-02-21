@@ -91,6 +91,10 @@ module.exports = {
           "0%": { backgroundPosition: "-200% 0" },
           "100%": { backgroundPosition: "200% 0" },
         },
+        "fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
         "fade-in-up": {
           "0%": { opacity: "0", transform: "translateY(30px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
@@ -106,6 +110,7 @@ module.exports = {
         "caret-blink": "caret-blink 1.25s ease-out infinite",
         "float": "float 6s ease-in-out infinite",
         "shimmer": "shimmer 2s infinite",
+        "fade-in": "fade-in 0.5s ease-out forwards",
         "fade-in-up": "fade-in-up 0.8s ease-out forwards",
         "pulse-glow": "pulse-glow 2s ease-in-out infinite",
       },

@@ -70,6 +70,14 @@ export function Testimonials() {
     setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
 
+  // Autoplay infinito a cada 3 segundos
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
+
   return (
     <section
       ref={sectionRef}
@@ -107,8 +115,11 @@ export function Testimonials() {
             </div>
 
             {/* Main Card */}
-            <div className="bg-white rounded-3xl shadow-elegant p-8 lg:p-12 pt-16">
-              <div className="text-center">
+            <div className="bg-white rounded-3xl shadow-elegant p-8 lg:p-12 pt-16 overflow-hidden">
+              <div
+                key={currentIndex}
+                className="text-center animate-fade-in"
+              >
                 {/* Rating */}
                 <div className="flex justify-center gap-1 mb-6">
                   {[...Array(testimonials[currentIndex].rating)].map((_, i) => (
